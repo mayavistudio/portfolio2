@@ -1,6 +1,11 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import React from "react";
-import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {
+  FaArtstation,
+  FaLinkedin,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa"; // Import YouTube icon from react-icons
 
 const Footer = () => {
   return (
@@ -14,7 +19,7 @@ const Footer = () => {
 
         <div className="flex justify-center gap-12 mb-5">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61568488016502&mibextid=ZbWKwL"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:bg-blue-600 hover:text-white p-5 rounded-full transition-all duration-300"
@@ -22,15 +27,23 @@ const Footer = () => {
             <Facebook size={32} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://www.artstation.com/mayavi_studio?fbclid=PAZXh0bgNhZW0CMTEAAaYdW_wtipIUojzMIsFPWUUx0UOlWtvG7jElf6yGuoFUWP_LGgLCsqWz4_I_aem_RcvnSsU-Hk0X_Ar-gU9GMg"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:bg-blue-400 hover:text-white p-5 rounded-full transition-all duration-300"
+            className="text-white hover:bg-gray-700 hover:text-white p-5 rounded-full transition-all duration-300"
           >
-            <Twitter size={32} />
+            <FaArtstation size={32} /> {/* ArtStation icon */}
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.youtube.com/@MayaviStudio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:bg-red-600 hover:text-white p-5 rounded-full transition-all duration-300"
+          >
+            <FaYoutube size={32} /> {/* YouTube icon */}
+          </a>
+          <a
+            href="https://www.instagram.com/mayavi_studio_/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:bg-pink-500 hover:text-white p-5 rounded-full transition-all duration-300"
@@ -38,7 +51,7 @@ const Footer = () => {
             <Instagram size={32} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/105010826/admin/dashboard/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:bg-blue-800 hover:text-white p-5 rounded-full transition-all duration-300"
