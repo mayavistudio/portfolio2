@@ -69,7 +69,7 @@ const Roadmap = () => {
               {/* Text Section */}
               <div className="flex-1 bg-purple-600 p-8 rounded-xl shadow-lg border border-purple-600">
                 <h2 className="text-3xl font-bold text-white mb-4">
-                  STEP {index + 1}: {step.title}
+                  {step.title}
                 </h2>
                 <p className="text-lg text-purple-200 leading-relaxed">
                   {step.description}
