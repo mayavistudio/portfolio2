@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
+    <div className="min-h-screen bg-gray-900 text-white p-6 py-20">
       {/* Header Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-purple-500 mb-4">
