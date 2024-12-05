@@ -24,6 +24,18 @@ const Roadmap = () => {
         "Bring characters and objects to life by defining their movements, actions, and expressions, using keyframes and in-betweens.",
       videoUrl: "https://www.youtube.com/embed/nXzW8LcUL1U",
     },
+    {
+      title: "FX (Special Effects)",
+      description:
+        "Add visual effects like explosions, smoke, fire, weather, or magical elements that enhance the scene and support the narrative.",
+      videoUrl: "https://www.youtube.com/embed/5d9N2eI4l4Y",
+    },
+    {
+      title: "Rendering",
+      description:
+        "Generate the final high-quality images from the 3D scene, applying lighting, textures, and details to produce realistic visuals.",
+      videoUrl: "https://www.youtube.com/embed/5d9N2eI4l4Y",
+    },
   ];
 
   return (
