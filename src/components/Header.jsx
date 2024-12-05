@@ -17,6 +17,14 @@ const Header = () => {
         >
           Home
         </Link>
+
+        <Link
+          to="/roadmap"
+          className="text-white hover:text-gray-300 transition-colors"
+        >
+          Roadmap
+        </Link>
+
         <Link
           to="/portfolio"
           className="text-white hover:text-gray-300 transition-colors"
