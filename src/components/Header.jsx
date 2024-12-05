@@ -31,12 +31,7 @@ const Header = () => {
         >
           Portfolio
         </Link>
-        <Link
-          to="/about"
-          className="text-white hover:text-gray-300 transition-colors"
-        >
-          About
-        </Link>
+
         <Link
           to="/contact"
           className="text-white hover:text-gray-300 transition-colors"

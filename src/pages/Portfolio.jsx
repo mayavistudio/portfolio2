@@ -1,7 +1,14 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <>
+      <div className="min-h-screen bg-black">Portfolio</div>
+
+      <Footer />
+    </>
+  );
 };
 
 export default Portfolio;
