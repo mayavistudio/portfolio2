@@ -9,8 +9,7 @@ const Portfolio = () => {
           Our Portfolio
         </h1>
         <Tabs defaultValue="All" className="w-full">
-          <TabsList className="grid w-full grid-cols-7">
-            <TabsTrigger value="All">All</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-6">
             <TabsTrigger value="3dassets">3D ASSETS</TabsTrigger>
             <TabsTrigger value="cgiadv">CGI ADVERTISEMENTS</TabsTrigger>
             <TabsTrigger value="charactermodelling">
