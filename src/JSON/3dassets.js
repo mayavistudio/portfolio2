@@ -79,6 +79,62 @@ export const assets3d = [
   {
     projects: [
       {
+        id: 8,
+        name: "ramkumar-axe",
+        mainImage: {
+          id: 801,
+          src: ramkumarAxe0,
+        },
+        images: [
+          { id: 801, src: ramkumarAxe0 },
+          { id: 802, src: ramkumarAxe1 },
+          { id: 803, src: ramkumarAxe2 },
+          { id: 804, src: ramkumarAxe3 },
+          { id: 805, src: ramkumarAxe4 },
+          { id: 806, src: ramkumarAxe5 },
+        ],
+      },
+      {
+        id: 4,
+        name: "lamp",
+        mainImage: {
+          id: 401,
+          src: lamp1,
+        },
+        images: [
+          { id: 401, src: lamp1 },
+          { id: 402, src: lamp2 },
+        ],
+      },
+      {
+        id: 11,
+        name: "rangaBox",
+        mainImage: {
+          id: 1101,
+          src: rangaBox3,
+        },
+        images: [
+          { id: 1101, src: rangaBox1 },
+          { id: 1102, src: rangaBox2 },
+          { id: 1103, src: rangaBox3 },
+        ],
+      },
+      {
+        id: 10,
+        name: "ramkumar-g",
+        mainImage: {
+          id: 1001,
+          src: ramkumarG1,
+        },
+        images: [
+          { id: 1001, src: ramkumarG1 },
+          { id: 1002, src: ramkumarG2 },
+          { id: 1003, src: ramkumarG3 },
+          { id: 1004, src: ramkumarG4 },
+          { id: 1005, src: ramkumarG5 },
+        ],
+      },
+      {
         id: 1,
         name: "akgun",
         mainImage: {
@@ -107,88 +163,6 @@ export const assets3d = [
         ],
       },
       {
-        id: 3,
-        name: "car",
-        mainImage: {
-          id: 301,
-          src: car1,
-        },
-        images: [
-          { id: 301, src: car1 },
-          { id: 302, src: car2 },
-        ],
-      },
-      {
-        id: 4,
-        name: "lamp",
-        mainImage: {
-          id: 401,
-          src: lamp1,
-        },
-        images: [
-          { id: 401, src: lamp1 },
-          { id: 402, src: lamp2 },
-        ],
-      },
-      {
-        id: 5,
-        name: "lighter",
-        mainImage: {
-          id: 501,
-          src: lighter1,
-        },
-        images: [
-          { id: 501, src: lighter1 },
-          { id: 502, src: lighter2 },
-          { id: 503, src: lighter3 },
-        ],
-      },
-      {
-        id: 6,
-        name: "lightgun",
-        mainImage: {
-          id: 601,
-          src: lightgun1,
-        },
-        images: [
-          { id: 601, src: lightgun1 },
-          { id: 602, src: lightgun2 },
-          { id: 603, src: lightgun3 },
-          { id: 604, src: lightgun4 },
-          { id: 605, src: lightgun5 },
-        ],
-      },
-      {
-        id: 7,
-        name: "pistol",
-        mainImage: {
-          id: 701,
-          src: pistol1,
-        },
-        images: [
-          { id: 701, src: pistol1 },
-          { id: 702, src: pistol2 },
-          { id: 703, src: pistol3 },
-          { id: 704, src: pistol4 },
-        ],
-      },
-      {
-        id: 8,
-        name: "ramkumar-axe",
-        mainImage: {
-          id: 801,
-          src: ramkumarAxe0,
-        },
-        images: [
-          { id: 801, src: ramkumarAxe0 },
-          { id: 802, src: ramkumarAxe1 },
-          { id: 803, src: ramkumarAxe2 },
-          { id: 804, src: ramkumarAxe3 },
-          { id: 805, src: ramkumarAxe4 },
-          { id: 806, src: ramkumarAxe5 },
-        ],
-      },
-      {
         id: 9,
         name: "ramkumar-b",
         mainImage: {
@@ -203,45 +177,32 @@ export const assets3d = [
           { id: 905, src: ramkumarB5 },
         ],
       },
+
       {
-        id: 10,
-        name: "ramkumar-g",
+        id: 14,
+        name: "scifi",
         mainImage: {
-          id: 1001,
-          src: ramkumarG1,
+          id: 1401,
+          src: scifi1,
         },
         images: [
-          { id: 1001, src: ramkumarG1 },
-          { id: 1002, src: ramkumarG2 },
-          { id: 1003, src: ramkumarG3 },
-          { id: 1004, src: ramkumarG4 },
-          { id: 1005, src: ramkumarG5 },
+          { id: 1401, src: scifi1 },
+          { id: 1402, src: scifi2 },
         ],
       },
+
       {
-        id: 11,
-        name: "rangaBox",
+        id: 7,
+        name: "pistol",
         mainImage: {
-          id: 1101,
-          src: rangaBox3,
+          id: 701,
+          src: pistol1,
         },
         images: [
-          { id: 1101, src: rangaBox1 },
-          { id: 1102, src: rangaBox2 },
-          { id: 1103, src: rangaBox3 },
-        ],
-      },
-      {
-        id: 12,
-        name: "receiver",
-        mainImage: {
-          id: 1201,
-          src: reciever1,
-        },
-        images: [
-          { id: 1201, src: reciever2 },
-          { id: 1202, src: reciever3 },
-          { id: 1203, src: reciever1 },
+          { id: 701, src: pistol1 },
+          { id: 702, src: pistol2 },
+          { id: 703, src: pistol3 },
+          { id: 704, src: pistol4 },
         ],
       },
       {
@@ -258,16 +219,44 @@ export const assets3d = [
           { id: 1304, src: rituWater4 },
         ],
       },
+
       {
-        id: 14,
-        name: "scifi",
+        id: 3,
+        name: "car",
         mainImage: {
-          id: 1401,
-          src: scifi1,
+          id: 301,
+          src: car1,
         },
         images: [
-          { id: 1401, src: scifi1 },
-          { id: 1402, src: scifi2 },
+          { id: 301, src: car1 },
+          { id: 302, src: car2 },
+        ],
+      },
+      {
+        id: 12,
+        name: "receiver",
+        mainImage: {
+          id: 1201,
+          src: reciever1,
+        },
+        images: [
+          { id: 1201, src: reciever2 },
+          { id: 1202, src: reciever3 },
+          { id: 1203, src: reciever1 },
+        ],
+      },
+
+      {
+        id: 5,
+        name: "lighter",
+        mainImage: {
+          id: 501,
+          src: lighter1,
+        },
+        images: [
+          { id: 501, src: lighter1 },
+          { id: 502, src: lighter2 },
+          { id: 503, src: lighter3 },
         ],
       },
       {
@@ -285,6 +274,21 @@ export const assets3d = [
           { id: 1505, src: suit5 },
           { id: 1506, src: suit6 },
           { id: 1507, src: suit7 },
+        ],
+      },
+      {
+        id: 6,
+        name: "lightgun",
+        mainImage: {
+          id: 601,
+          src: lightgun1,
+        },
+        images: [
+          { id: 601, src: lightgun1 },
+          { id: 602, src: lightgun2 },
+          { id: 603, src: lightgun3 },
+          { id: 604, src: lightgun4 },
+          { id: 605, src: lightgun5 },
         ],
       },
     ],

@@ -35,7 +35,7 @@ const Portfolio = () => {
             <p>Here you can list your skills...</p>
           </TabsContent>
           <TabsContent value="3dassets">
-            <Assets d3assets={d3assets} />
+            <Assets d2assets={d3assets} />
           </TabsContent>
         </Tabs>
       </div>

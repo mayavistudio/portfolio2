@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 
+import AssetDetails from "./components/Assetdetails.jsx";
 import { ThemeProvider } from "./components/theme-provider.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "roadmap",
         element: <Roadmap />,
+      },
+      {
+        path: "/asset/:id",
+        element: <AssetDetails />,
       },
     ],
   },
