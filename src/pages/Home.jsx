@@ -1,8 +1,10 @@
+import Slideshow from "@/components/SlideShow";
+
 const Home = () => {
   return (
-    <>
-      <div className="bg-black h-screen"></div>
-    </>
+    <div>
+      <Slideshow />
+    </div>
   );
 };
 
