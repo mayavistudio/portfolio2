@@ -1,7 +1,11 @@
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
-import banner2 from "../../public/CGI/Cgi.mp4";
-import banner1 from "../assets/3D ASSETS/akgun-1.jpeg";
+import banner3 from "../assets/BANNERS/3dassetsbanner.mp4";
+import banner1 from "../assets/BANNERS/cgibanner.mp4";
+import banner5 from "../assets/BANNERS/charbanner.png";
+import banner6 from "../assets/BANNERS/interiorbanner.jpeg";
+import banner4 from "../assets/BANNERS/pmbanner.png";
+import banner2 from "../assets/BANNERS/productanimation.mp4";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -13,12 +17,12 @@ const Slideshow = () => {
   const slidesRef = useRef([]);
 
   const slides = [
-    { id: 1, title: "Video 1", type: "video", src: banner2 },
-    { id: 2, title: "Image 2", type: "image", src: banner1 },
-    { id: 3, title: "Video 3", type: "video", src: banner2 },
-    { id: 4, title: "Image 4", type: "image", src: banner1 },
-    { id: 5, title: "Video 5", type: "video", src: banner2 },
-    { id: 6, title: "Image 6", type: "image", src: banner1 },
+    { id: 1, title: "CGI Advertisements", type: "video", src: banner1 },
+    { id: 2, title: "Product Animation", type: "video", src: banner2 },
+    { id: 3, title: "3d Assets", type: "video", src: banner3 },
+    { id: 4, title: "Product Modelling", type: "image", src: banner4 },
+    { id: 5, title: "Character Modelling", type: "image", src: banner5 },
+    { id: 6, title: "Interior & Exterior", type: "image", src: banner6 },
   ];
 
   useEffect(() => {
@@ -90,7 +94,7 @@ const Slideshow = () => {
           )}
 
           {/* Title Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
+          <div className="absolute bottom-1/2 left-[15%] right-0 p-4 ">
             <h2 className="text-white text-2xl font-bold">{slide.title}</h2>
           </div>
         </div>

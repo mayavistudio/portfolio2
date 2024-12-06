@@ -27,7 +27,7 @@ const Portfolio = () => {
               <TabsTrigger value="interiorexterior">
                 INTERIOR & EXTERIOR
               </TabsTrigger>
-              <TabsTrigger value="product">PRODUCT</TabsTrigger>
+              <TabsTrigger value="product">PRODUCT MODELLING</TabsTrigger>
               <TabsTrigger value="productanimation">
                 PRODUCT ANIMATION
               </TabsTrigger>

@@ -73,8 +73,6 @@ import suit5 from "../assets/3D ASSETS/suit-5.jpg";
 import suit6 from "../assets/3D ASSETS/suit-6.jpg";
 import suit7 from "../assets/3D ASSETS/suit-7.jpg";
 
-import banner from "../assets/3D ASSETS/BANNER.mp4";
-
 export const assets3d = [
   {
     projects: [
@@ -292,8 +290,5 @@ export const assets3d = [
         ],
       },
     ],
-    banner: {
-      src: banner,
-    },
   },
 ];
