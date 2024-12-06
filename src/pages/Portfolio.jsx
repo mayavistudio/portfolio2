@@ -1,8 +1,10 @@
 import Assets from "@/components/Assets";
+import ProductAnimation from "@/components/ProductAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { assets3d } from "@/JSON/3dassets";
 import { characters } from "@/JSON/character";
 import { realEstate } from "@/JSON/Interior";
+import { products } from "@/JSON/product";
 import Footer from "../components/Footer";
 
 const Portfolio = () => {
@@ -40,6 +42,41 @@ const Portfolio = () => {
             </TabsContent>
             <TabsContent value="3dassets">
               <Assets d2assets={d3assets} name={"3D Assets"} />
+            </TabsContent>
+
+            <TabsContent value="product">
+              <Assets
+                d2assets={products}
+                name={"Product Modelling"}
+                imageHeight={"h-84"}
+              />
+            </TabsContent>
+            <TabsContent value="cgiadv">
+              <div className="min-h-screen text-gray-100 p-8">
+                <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
+                  CGI Advertisements
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                  {/* Video 1 */}
+                  <iframe
+                    src="https://www.youtube.com/embed/S1SwIU90T2Q?autoplay=1&loop=1&mute=1&controls=0&playlist=S1SwIU90T2Q"
+                    className="w-full aspect-square"
+                    allow="autoplay"
+                    frameBorder="0"
+                  ></iframe>
+
+                  {/* Video 2 */}
+                  <iframe
+                    src="https://www.youtube.com/embed/ZSq14BKkR2U?autoplay=1&loop=1&mute=1&controls=0&playlist=ZSq14BKkR2U"
+                    className="w-full aspect-square"
+                    allow="autoplay"
+                    frameBorder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="productanimation">
+              <ProductAnimation />
             </TabsContent>
           </Tabs>
         </div>

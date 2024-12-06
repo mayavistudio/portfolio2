@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Assets({ d2assets, name }) {
+export default function Assets({ d2assets, name, imageHeight = "h-64" }) {
   const [hoveredAsset, setHoveredAsset] = useState(null);
   const [d3assets, setd3assets] = useState(d2assets);
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function Assets({ d2assets, name }) {
         {d3assets.map((asset) => (
           <motion.div
             key={asset.id}
-            className="group relative overflow-hidden rounded-lg shadow-xl hover:bg-purple-900 transition-all duration-300 cursor-pointer"
+            className="group relative overflow-hidden rounded-lg shadow-xl  transition-all duration-300 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             onHoverStart={() => setHoveredAsset(asset.id)}
             onHoverEnd={() => setHoveredAsset(null)}
@@ -29,7 +29,7 @@ export default function Assets({ d2assets, name }) {
             <img
               src={asset.mainImage.src}
               alt={asset.name}
-              className="w-full h-64 object-cover transition-transform duration-300 rounded-t-lg"
+              className={`w-full ${imageHeight}  transition-transform duration-300 rounded-t-lg object-contain`}
             />
             <motion.div
               className="absolute inset-0 to-transparent flex items-end p-6"
