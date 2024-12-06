@@ -37,14 +37,14 @@ const roadmapSteps = [
     title: "FX (Special Effects)",
     description:
       "Add visual effects like explosions, smoke, fire, weather, or magical elements that enhance the scene and support the narrative.",
-    videoUrl: "https://www.youtube.com/embed/5d9N2eI4l4Y",
+    videoUrl: "https://www.youtube.com/embed/XYWOMC6gD4s",
     icon: "✨",
   },
   {
     title: "Rendering",
     description:
       "Generate the final high-quality images from the 3D scene, applying lighting, textures, and details to produce realistic visuals.",
-    videoUrl: "https://www.youtube.com/embed/5d9N2eI4l4Y",
+    videoUrl: "https://www.youtube.com/embed/xZGDD7n1hFg",
     icon: "🎥",
   },
 ];
@@ -53,7 +53,7 @@ export const Roadmap = () => (
   <>
     <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(transparent_75%,#a257e6)]" />{" "}
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}

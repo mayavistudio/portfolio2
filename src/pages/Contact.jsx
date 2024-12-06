@@ -25,10 +25,10 @@ const ContactPage = () => {
   };
 
   return (
-    <section className=" text-white px-10 ">
+    <section className=" text-white  ">
       <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

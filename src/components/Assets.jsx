@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Assets({ d2assets }) {
+export default function Assets({ d2assets, name }) {
   const [hoveredAsset, setHoveredAsset] = useState(null);
   const [d3assets, setd3assets] = useState(d2assets);
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function Assets({ d2assets }) {
   return (
     <div className="min-h-screen text-gray-100 p-8">
       <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
-        3D Assets
+        {name}
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {d3assets.map((asset) => (
