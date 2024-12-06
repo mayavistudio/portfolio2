@@ -18,7 +18,7 @@ export default function AssetDetails() {
             <img
               src={image.src}
               alt={asset.name}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-64 object-contain rounded-lg"
             />
           </div>
         ))}

@@ -51,13 +51,15 @@ const roadmapSteps = [
 
 export const Roadmap = () => (
   <>
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white py-24 px-4 sm:px-6 lg:px-8">
+    <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center text-purple-400 mb-12"
+          className="text-5xl font-bold text-center text-purple-600 mb-12 shadow-lg relative"
         >
           Animation Roadmap
         </motion.h1>
@@ -77,6 +79,7 @@ export const Roadmap = () => (
         </div>
       </div>
     </div>
+
     <Footer />
   </>
 );
