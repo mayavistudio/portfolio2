@@ -2,6 +2,7 @@ import Assets from "@/components/Assets";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { assets3d } from "@/JSON/3dassets";
 import { characters } from "@/JSON/character";
+import { realEstate } from "@/JSON/Interior";
 import Footer from "../components/Footer";
 
 const Portfolio = () => {
@@ -34,9 +35,8 @@ const Portfolio = () => {
             <TabsContent value="charactermodelling">
               <Assets d2assets={characters} name={"Character Modelling"} />
             </TabsContent>
-            <TabsContent value="skills">
-              <h2 className="text-2xl font-semibold mb-4 ">My Skills</h2>
-              <p>Here you can list your skills...</p>
+            <TabsContent value="interiorexterior">
+              <Assets d2assets={realEstate} name={"INTERIOR & EXTERIOR"} />
             </TabsContent>
             <TabsContent value="3dassets">
               <Assets d2assets={d3assets} name={"3D Assets"} />
