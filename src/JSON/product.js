@@ -63,11 +63,11 @@ import mouse2 from "../assets/PRODUCT/mouse2.png";
 import mouse3 from "../assets/PRODUCT/mouse3.png";
 
 // Sandals
-import Sandal1 from "../assets/PRODUCT/Sandal1.png";
-import Sandal2 from "../assets/PRODUCT/Sandal2.png";
+import Sandal1 from "../assets/PRODUCT/sandal1.png";
+import Sandal2 from "../assets/PRODUCT/sandal2.png";
 
 // Scooty
-import Scooty1 from "../assets/PRODUCT/Scooty1.png";
+import Scooty1 from "../assets/PRODUCT/scooty1.png";
 
 // Sofa
 import Sofa1 from "../assets/PRODUCT/Sofa1.png";
