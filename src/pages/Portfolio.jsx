@@ -12,7 +12,7 @@ const Portfolio = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className=" relative text-white px-8 w-full ">
           <h1 className="text-4xl font-bold mb-8 text-purple-600 text-center">
-            Our Portfolio
+            Our Portfolios
           </h1>
           <Tabs defaultValue="3dassets" className="w-full">
             <TabsList className="grid w-full grid-cols-6">
