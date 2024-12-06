@@ -1,7 +1,7 @@
 // Import files
 
 import bedroom1 from "../assets/REAL ESTATE/Bedroom1.jpeg";
-import bedroom2 from "../assets/REAL ESTATE/Bedroom2.jpg";
+
 import bedroom3 from "../assets/REAL ESTATE/Bedroom3.jpg";
 import dhuleApartment from "../assets/REAL ESTATE/dhule.png";
 import dining from "../assets/REAL ESTATE/Dining.jpg";
@@ -24,7 +24,7 @@ export const realEstate = [
         id: 201,
         src: bedroom1,
       },
-      { id: 202, src: bedroom2 },
+
       {
         id: 203,
         src: bedroom3,
