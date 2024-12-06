@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
-import banner1 from "../../public/3D ASSETS/img69.jpg";
 import banner2 from "../../public/CGI/Cgi.mp4";
+import banner1 from "../assets/3D ASSETS/akgun-1.jpeg";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
