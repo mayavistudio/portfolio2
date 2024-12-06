@@ -16,7 +16,7 @@ import washroom2 from "../assets/REAL ESTATE/Washroom2.jpeg";
 
 export const realEstate = [
   {
-    id: 2,
+    id: 1,
     name: "Bedroom",
     mainImage: { id: 201, src: bedroom1 },
     images: [
