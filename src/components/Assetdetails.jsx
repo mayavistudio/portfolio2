@@ -31,12 +31,11 @@ export default function AssetDetails() {
                 </div>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] bg-black border-purple-400">
-                <div className="relative w-full h-[80vh]">
+                <div className="relative w-full h-[60vh]">
                   <img
                     src={image.src}
                     alt={asset.name}
-                    fill
-                    className="object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </DialogContent>
