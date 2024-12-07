@@ -94,8 +94,11 @@ const Slideshow = () => {
           )}
 
           {/* Title Overlay */}
-          <div className="absolute bottom-1/2 left-[15%] right-0 p-4 ">
-            <h2 className="text-white text-2xl font-bold">{slide.title}</h2>
+          <div className="absolute bottom-1/2 left-[5%] bg-black/10  ">
+            <h2 className="text-white text-6xl font-bold uppercase tracking-wider">
+              {slide.title}
+            </h2>
+            <div className="mt-2 h-1 w-full bg-white mx-auto"></div>
           </div>
         </div>
       ))}

@@ -1,4 +1,5 @@
 import Assets from "@/components/Assets";
+import Header from "@/components/Header";
 import ProductAnimation from "@/components/ProductAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { assets3d } from "@/JSON/3dassets";
@@ -13,6 +14,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
+        <Header />
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>
         <div className=" relative min-h-screen text-white px-8 w-full ">

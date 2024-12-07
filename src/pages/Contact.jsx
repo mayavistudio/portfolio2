@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { motion } from "framer-motion"; // Framer Motion
 import { Mail, MapPin, Phone } from "lucide-react"; // Lucide React Icons
 import { useState } from "react";
@@ -26,6 +27,7 @@ const ContactPage = () => {
 
   return (
     <section className=" text-white  ">
+      <Header />
       <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>

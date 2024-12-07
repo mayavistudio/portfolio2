@@ -6,7 +6,6 @@ import "./index.css";
 
 import AssetDetails from "./components/Assetdetails.jsx";
 import { ThemeProvider } from "./components/theme-provider.jsx";
-import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
@@ -29,10 +28,7 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      {
-        path: "about",
-        element: <About />,
-      },
+
       {
         path: "roadmap",
         element: <Roadmap />,
