@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import Header from "./Header";
 
 export default function AssetDetails() {
   const { state } = useLocation();
@@ -10,12 +11,11 @@ export default function AssetDetails() {
 
   return (
     <div className="h-full w-full bg-black py-24 bg-grid-white/[0.2] relative flex">
+      <Header />
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(transparent_50%,#d157e6)]" />
       <div className="min-h-screen text-gray-100 p-8">
-        <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
-          {asset.name}
-        </h2>
+        <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12"></h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {asset.images.map((image) => (
             <Dialog key={image.id}>

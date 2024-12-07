@@ -45,9 +45,7 @@ export default function Assets({ d2assets, name, imageHeight = "h-64" }) {
                   opacity: hoveredAsset === asset.id ? 1 : 0,
                 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
-              >
-                {asset.name}
-              </motion.p>
+              ></motion.p>
             </motion.div>
           </motion.div>
         ))}
