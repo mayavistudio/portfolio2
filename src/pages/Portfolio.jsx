@@ -37,26 +37,26 @@ const Portfolio = () => {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="charactermodelling">
-              <Assets d2assets={characters} name={"Character Modelling"} />
+              <Assets d2assets={characters} name={"CHARACTER MODELLING"} />
             </TabsContent>
             <TabsContent value="interiorexterior">
               <Assets d2assets={realEstate} name={"INTERIOR & EXTERIOR"} />
             </TabsContent>
             <TabsContent value="3dassets">
-              <Assets d2assets={d3assets} name={"3D Assets"} />
+              <Assets d2assets={d3assets} name={"3D ASSETS"} />
             </TabsContent>
 
             <TabsContent value="product">
               <Assets
                 d2assets={products}
-                name={"Product Modelling"}
+                name={"PRODUCT MODELLING"}
                 imageHeight={"h-84"}
               />
             </TabsContent>
             <TabsContent value="cgiadv">
               <div className="min-h-screen text-gray-100 p-8">
                 <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
-                  CGI Advertisements
+                  CGI ADVERTISEMENTS
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                   {/* Video 1 */}

@@ -81,7 +81,7 @@ export const assets3d = [
         name: "ramkumar-axe",
         mainImage: {
           id: 801,
-          src: ramkumarAxe0,
+          src: ramkumarAxe1,
         },
         images: [
           { id: 801, src: ramkumarAxe0 },
@@ -122,7 +122,7 @@ export const assets3d = [
         name: "ramkumar-g",
         mainImage: {
           id: 1001,
-          src: ramkumarG1,
+          src: ramkumarG2,
         },
         images: [
           { id: 1001, src: ramkumarG1 },
@@ -137,7 +137,7 @@ export const assets3d = [
         name: "akgun",
         mainImage: {
           id: 101,
-          src: akgun1,
+          src: akgun2,
         },
         images: [
           { id: 101, src: akgun1 },
@@ -151,7 +151,7 @@ export const assets3d = [
         name: "bulbgun",
         mainImage: {
           id: 201,
-          src: bulbgun1,
+          src: bulbgun3,
         },
         images: [
           { id: 201, src: bulbgun1 },
@@ -223,7 +223,7 @@ export const assets3d = [
         name: "car",
         mainImage: {
           id: 301,
-          src: car1,
+          src: car2,
         },
         images: [
           { id: 301, src: car1 },

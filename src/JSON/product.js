@@ -90,7 +90,7 @@ export const products = [
   {
     id: 2,
     name: "Bud",
-    mainImage: { id: 3, src: Bud1 },
+    mainImage: { id: 3, src: Bud2 },
     images: [
       { id: 3, src: Bud1 },
       { id: 4, src: Bud2 },
@@ -101,7 +101,7 @@ export const products = [
   {
     id: 3,
     name: "Chair",
-    mainImage: { id: 7, src: Chair1 },
+    mainImage: { id: 7, src: Chair2 },
     images: [
       { id: 7, src: Chair1 },
       { id: 8, src: Chair2 },
@@ -146,7 +146,7 @@ export const products = [
   {
     id: 8,
     name: "Heel",
-    mainImage: { id: 19, src: Heel1 },
+    mainImage: { id: 19, src: Heel2 },
     images: [
       { id: 19, src: Heel1 },
       { id: 20, src: Heel2 },
@@ -157,7 +157,7 @@ export const products = [
   {
     id: 9,
     name: "Machines",
-    mainImage: { id: 23, src: machine1 },
+    mainImage: { id: 23, src: machine2 },
     images: [
       { id: 23, src: machine1 },
       { id: 24, src: machine2 },
@@ -166,7 +166,7 @@ export const products = [
   {
     id: 10,
     name: "Mouse",
-    mainImage: { id: 25, src: mouse1 },
+    mainImage: { id: 25, src: mouse2 },
     images: [
       { id: 25, src: mouse1 },
       { id: 26, src: mouse2 },
@@ -185,7 +185,7 @@ export const products = [
   {
     id: 12,
     name: "Jewelry Rings",
-    mainImage: { id: 30, src: Jring1 },
+    mainImage: { id: 30, src: Jring2 },
     images: [
       { id: 30, src: Jring1 },
       { id: 31, src: Jring2 },
@@ -198,7 +198,7 @@ export const products = [
   {
     id: 13,
     name: "Jewelry Rings2",
-    mainImage: { id: 36, src: Jring22 },
+    mainImage: { id: 36, src: Jring23 },
     images: [
       { id: 36, src: Jring21 },
       { id: 37, src: Jring22 },
@@ -231,7 +231,7 @@ export const products = [
   {
     id: 17,
     name: "White Shoes",
-    mainImage: { id: 45, src: Whiteshoes1 },
+    mainImage: { id: 45, src: Whiteshoes2 },
     images: [
       { id: 45, src: Whiteshoes1 },
       { id: 46, src: Whiteshoes2 },

@@ -2,7 +2,7 @@ const ProductAnimation = () => {
   return (
     <div className="min-h-screen text-gray-100 p-8">
       <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
-        Product Modelling
+        PRODUCT ANIMATION
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <iframe
