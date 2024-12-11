@@ -1,5 +1,7 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
+
 import banner3 from "../assets/BANNERS/3dassetsbanner.mp4";
 import banner1 from "../assets/BANNERS/cgibanner.mp4";
 import banner5 from "../assets/BANNERS/charbanner.png";
@@ -7,16 +9,36 @@ import banner6 from "../assets/BANNERS/interiorbanner.jpeg";
 import banner4 from "../assets/BANNERS/pmbanner.png";
 import banner2 from "../assets/BANNERS/productanimation.mp4";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import d3phone from "../assets/BANNERPHONE/3dphone.png";
+import cgiphone from "../assets/BANNERPHONE/cgiphone.mp4";
+import charphone from "../assets/BANNERPHONE/charphone.png";
+import intphone from "../assets/BANNERPHONE/interiorphone.png";
+import pamphone from "../assets/BANNERPHONE/pamphone.png";
+import paphone from "../assets/BANNERPHONE/paphone.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const useIsPhone = () => {
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isPhone;
+};
 
 const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const containerRef = useRef(null);
   const slidesRef = useRef([]);
+  const isPhone = useIsPhone();
 
-  const slides = [
+  const desktopSlides = [
     { id: 1, title: "CGI Advertisements", type: "video", src: banner1 },
     { id: 2, title: "Product Animation", type: "video", src: banner2 },
     { id: 3, title: "3d Assets", type: "video", src: banner3 },
@@ -25,8 +47,18 @@ const Slideshow = () => {
     { id: 6, title: "Interior & Exterior", type: "image", src: banner6 },
   ];
 
+  const phoneSlides = [
+    { id: 1, title: "3d Assets", type: "image", src: d3phone },
+    { id: 2, title: "Phone Banner 2", type: "video", src: cgiphone },
+    { id: 2, title: "Phone Banner 2", type: "video", src: paphone },
+    { id: 2, title: "Phone Banner 2", type: "image", src: pamphone },
+    { id: 2, title: "Phone Banner 2", type: "image", src: charphone },
+    { id: 2, title: "Phone Banner 2", type: "image", src: intphone },
+  ];
+
+  const slides = isPhone ? phoneSlides : desktopSlides;
+
   useEffect(() => {
-    // Set up auto-scroll
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
       if (containerRef.current) {
@@ -39,7 +71,6 @@ const Slideshow = () => {
       }
     }, 5000);
 
-    // Set up scroll triggers for each slide
     slides.forEach((_, index) => {
       gsap.to(slidesRef.current[index], {
         scrollTrigger: {
@@ -52,7 +83,6 @@ const Slideshow = () => {
       });
     });
 
-    // Handle manual scrolling
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
@@ -67,7 +97,7 @@ const Slideshow = () => {
       window.removeEventListener("scroll", handleScroll);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [currentSlide]);
+  }, [currentSlide, slides]);
 
   return (
     <div ref={containerRef} className="relative">
@@ -93,8 +123,7 @@ const Slideshow = () => {
             />
           )}
 
-          {/* Title Overlay */}
-          <div className="absolute bottom-1/2 left-[5%] bg-black/10  ">
+          <div className="absolute bottom-1/2 left-[5%] bg-black/10">
             <h2 className="text-white text-6xl font-bold uppercase tracking-wider">
               {slide.title}
             </h2>
@@ -103,7 +132,6 @@ const Slideshow = () => {
         </div>
       ))}
 
-      {/* Navigation Dots */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col gap-2">
         {slides.map((_, index) => (
           <button

@@ -1,77 +1,68 @@
 // Import all images based on the provided asset structure
-import akgun1 from "../assets/3D ASSETS/akgun-1.jpeg";
-import akgun2 from "../assets/3D ASSETS/akgun-2.jpeg";
-import akgun3 from "../assets/3D ASSETS/akgun-3.jpeg";
-import akgunvideo from "../assets/3D ASSETS/akgunvideo.mp4";
+import akgun1 from "../assets/3D ASSETS/akgun1.png";
+import akgun2 from "../assets/3D ASSETS/akgun2.png";
 
-import bulbgun1 from "../assets/3D ASSETS/bulbgun-1.jpg";
-import bulbgun2 from "../assets/3D ASSETS/bulbgun-2.jpg";
-import bulbgun3 from "../assets/3D ASSETS/bulbgun-3.jpg";
-import bulbgun4 from "../assets/3D ASSETS/bulbgun-4.jpg";
+import bulbgun1 from "../assets/3D ASSETS/bgun1.png";
+import bulbgun2 from "../assets/3D ASSETS/bgun2.png";
+import bulbgun3 from "../assets/3D ASSETS/bgun3.png";
+import bulbgun4 from "../assets/3D ASSETS/bgun4.png";
 
-import car1 from "../assets/3D ASSETS/car-1.jpeg";
-import car2 from "../assets/3D ASSETS/car-2.jpeg";
+import car1 from "../assets/3D ASSETS/car1.png";
+import car2 from "../assets/3D ASSETS/car2.png";
 
-import lamp1 from "../assets/3D ASSETS/lamp-1.jpeg";
-import lamp2 from "../assets/3D ASSETS/lamp-2.jpeg";
+import lamp1 from "../assets/3D ASSETS/lamp1.png";
+import lamp2 from "../assets/3D ASSETS/lamp2.png";
 
-import lighter1 from "../assets/3D ASSETS/Lighter-1.jpg";
-import lighter2 from "../assets/3D ASSETS/Lighter-2.jpg";
-import lighter3 from "../assets/3D ASSETS/Lighter-3.jpg";
+import lighter1 from "../assets/3D ASSETS/lighter1.png";
+import lighter2 from "../assets/3D ASSETS/lighter2.png";
+import lighter3 from "../assets/3D ASSETS/lighter3.png";
 
-import lightgun1 from "../assets/3D ASSETS/Lightgun1.png";
-import lightgun2 from "../assets/3D ASSETS/Lightgun2.png";
-import lightgun3 from "../assets/3D ASSETS/Lightgun3.png";
-import lightgun4 from "../assets/3D ASSETS/Lightgun4.png";
-import lightgun5 from "../assets/3D ASSETS/Lightgun5.png";
+import lightgun1 from "../assets/3D ASSETS/Lagun1.png";
+import lightgun2 from "../assets/3D ASSETS/Lagun2.png";
+import lightgun3 from "../assets/3D ASSETS/Lagun3.png";
 
-import pistol1 from "../assets/3D ASSETS/pistol-1.jpeg";
-import pistol2 from "../assets/3D ASSETS/pistol-2.jpeg";
-import pistol3 from "../assets/3D ASSETS/pistol-3.jpeg";
-import pistol4 from "../assets/3D ASSETS/pistol-4.jpeg";
+import pistol1 from "../assets/3D ASSETS/gun1.png";
+import pistol2 from "../assets/3D ASSETS/gun2.png";
+import pistol3 from "../assets/3D ASSETS/gun3.png";
 
-import ramkumarAxe0 from "../assets/3D ASSETS/ramkumar-axe0.jpg";
-import ramkumarAxe1 from "../assets/3D ASSETS/ramkumar-axe1.jpg";
-import ramkumarAxe2 from "../assets/3D ASSETS/ramkumar-axe2.jpg";
-import ramkumarAxe3 from "../assets/3D ASSETS/ramkumar-axe3.jpg";
-import ramkumarAxe4 from "../assets/3D ASSETS/ramkumar-axe4.jpg";
-import ramkumarAxe5 from "../assets/3D ASSETS/ramkumar-axe5.jpg";
+import ramkumarAxe0 from "../assets/3D ASSETS/ramkumar-axe0.png";
+import ramkumarAxe1 from "../assets/3D ASSETS/ramkumar-axe1.png";
+import ramkumarAxe2 from "../assets/3D ASSETS/ramkumar-axe2.png";
+import ramkumarAxe3 from "../assets/3D ASSETS/ramkumar-axe3.png";
+import ramkumarAxe4 from "../assets/3D ASSETS/ramkumar-axe4.png";
 
-import ramkumarB1 from "../assets/3D ASSETS/ramkumar-b1.jpg";
-import ramkumarB2 from "../assets/3D ASSETS/ramkumar-b2.jpg";
-import ramkumarB3 from "../assets/3D ASSETS/ramkumar-b3.jpg";
-import ramkumarB4 from "../assets/3D ASSETS/ramkumar-b4.jpg";
-import ramkumarB5 from "../assets/3D ASSETS/ramkumar-b5.jpg";
+import ramkumarB1 from "../assets/3D ASSETS/dgun1.png";
+import ramkumarB2 from "../assets/3D ASSETS/dgun2.png";
+import ramkumarB3 from "../assets/3D ASSETS/dgun3.png";
+import ramkumarB4 from "../assets/3D ASSETS/dgun4.png";
+import ramkumarB5 from "../assets/3D ASSETS/dgun5.png";
 
-import ramkumarG1 from "../assets/3D ASSETS/ramkumar-g1.jpg";
-import ramkumarG2 from "../assets/3D ASSETS/ramkumar-g2.jpg";
-import ramkumarG3 from "../assets/3D ASSETS/ramkumar-g3.jpg";
-import ramkumarG4 from "../assets/3D ASSETS/ramkumar-g4.jpg";
-import ramkumarG5 from "../assets/3D ASSETS/ramkumar-g5.jpg";
+import ramkumarG1 from "../assets/3D ASSETS/rgun1.png";
+import ramkumarG2 from "../assets/3D ASSETS/rgun2.png";
+import ramkumarG3 from "../assets/3D ASSETS/rgun3.png";
+import ramkumarG4 from "../assets/3D ASSETS/rgun4.png";
 
-import rangaBox1 from "../assets/3D ASSETS/ranga-box-1.jpg";
-import rangaBox2 from "../assets/3D ASSETS/ranga-box-2.jpg";
-import rangaBox3 from "../assets/3D ASSETS/ranga-box-3.jpg";
+import rangaBox1 from "../assets/3D ASSETS/box1.png";
+import rangaBox2 from "../assets/3D ASSETS/box2.png";
+import rangaBox3 from "../assets/3D ASSETS/box3.png";
 
-import reciever1 from "../assets/3D ASSETS/Reciever1.jpg";
-import reciever2 from "../assets/3D ASSETS/Reciever2.jpg";
-import reciever3 from "../assets/3D ASSETS/Reciever3.jpg";
+import reciever1 from "../assets/3D ASSETS/reciever1.png";
+import reciever2 from "../assets/3D ASSETS/reciever2.png";
+import reciever3 from "../assets/3D ASSETS/reciever3.png";
 
-import rituWater1 from "../assets/3D ASSETS/ritu-water-1.jpg";
-import rituWater2 from "../assets/3D ASSETS/ritu-water-2.jpg";
-import rituWater3 from "../assets/3D ASSETS/ritu-water-3.jpg";
-import rituWater4 from "../assets/3D ASSETS/ritu-water-4.jpg";
+import rituWater1 from "../assets/3D ASSETS/rwater0.png";
+import rituWater2 from "../assets/3D ASSETS/rwater1.png";
+import rituWater3 from "../assets/3D ASSETS/rwater2.png";
+import rituWater4 from "../assets/3D ASSETS/rwater3.png";
 
-import scifi1 from "../assets/3D ASSETS/scifi1.png";
-import scifi2 from "../assets/3D ASSETS/scifi2.png";
+import scifi1 from "../assets/3D ASSETS/browngun1.png";
+import scifi2 from "../assets/3D ASSETS/browngun2.png";
 
-import suit1 from "../assets/3D ASSETS/suit-1.jpg";
-import suit2 from "../assets/3D ASSETS/suit-2.jpg";
-import suit3 from "../assets/3D ASSETS/suit-3.jpg";
-import suit4 from "../assets/3D ASSETS/suit-4.jpg";
-import suit5 from "../assets/3D ASSETS/suit-5.jpg";
-import suit6 from "../assets/3D ASSETS/suit-6.jpg";
-import suit7 from "../assets/3D ASSETS/suit-7.jpg";
+import suit1 from "../assets/3D ASSETS/suit1.png";
+import suit2 from "../assets/3D ASSETS/suit2.png";
+import suit3 from "../assets/3D ASSETS/suit3.png";
+import suit4 from "../assets/3D ASSETS/suit4.png";
+import suit5 from "../assets/3D ASSETS/suit5.png";
 
 export const assets3d = [
   {
@@ -89,7 +80,6 @@ export const assets3d = [
           { id: 803, src: ramkumarAxe2 },
           { id: 804, src: ramkumarAxe3 },
           { id: 805, src: ramkumarAxe4 },
-          { id: 806, src: ramkumarAxe5 },
         ],
       },
       {
@@ -122,14 +112,13 @@ export const assets3d = [
         name: "ramkumar-g",
         mainImage: {
           id: 1001,
-          src: ramkumarG2,
+          src: ramkumarG1,
         },
         images: [
           { id: 1001, src: ramkumarG1 },
           { id: 1002, src: ramkumarG2 },
           { id: 1003, src: ramkumarG3 },
           { id: 1004, src: ramkumarG4 },
-          { id: 1005, src: ramkumarG5 },
         ],
       },
       {
@@ -137,13 +126,11 @@ export const assets3d = [
         name: "akgun",
         mainImage: {
           id: 101,
-          src: akgun2,
+          src: akgun1,
         },
         images: [
           { id: 101, src: akgun1 },
           { id: 102, src: akgun2 },
-          { id: 103, src: akgun3 },
-          { id: 104, src: akgunvideo },
         ],
       },
       {
@@ -151,7 +138,7 @@ export const assets3d = [
         name: "bulbgun",
         mainImage: {
           id: 201,
-          src: bulbgun3,
+          src: bulbgun1,
         },
         images: [
           { id: 201, src: bulbgun1 },
@@ -200,7 +187,6 @@ export const assets3d = [
           { id: 701, src: pistol1 },
           { id: 702, src: pistol2 },
           { id: 703, src: pistol3 },
-          { id: 704, src: pistol4 },
         ],
       },
       {
@@ -270,8 +256,6 @@ export const assets3d = [
           { id: 1503, src: suit3 },
           { id: 1504, src: suit4 },
           { id: 1505, src: suit5 },
-          { id: 1506, src: suit6 },
-          { id: 1507, src: suit7 },
         ],
       },
       {
@@ -285,8 +269,6 @@ export const assets3d = [
           { id: 601, src: lightgun1 },
           { id: 602, src: lightgun2 },
           { id: 603, src: lightgun3 },
-          { id: 604, src: lightgun4 },
-          { id: 605, src: lightgun5 },
         ],
       },
     ],
