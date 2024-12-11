@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+
       <main>
         <Outlet />
       </main>

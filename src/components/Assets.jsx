@@ -16,7 +16,7 @@ export default function Assets({ d2assets, name, imageHeight = "h-64" }) {
       <h2 className="text-4xl font-extrabold text-purple-400 text-center mb-12">
         {name}
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-10">
         {d3assets.map((asset) => (
           <motion.div
             key={asset.id}

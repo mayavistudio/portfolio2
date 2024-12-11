@@ -13,16 +13,16 @@ const Portfolio = () => {
   const character = characters[0].projects;
   return (
     <>
-      <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
+      <div className="h-full w-full  bg-black py-32  bg-grid-white/[0.2] relative flex ">
         <Header />
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>
-        <div className=" relative min-h-screen text-white px-8 w-full ">
+        <div className="w-full absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>
+        <div className=" relative min-h-screen text-white px-2 sm:px-8 w-full ">
           <h1 className="text-4xl font-bold mb-8 text-purple-600 text-center">
             Our Portfolios
           </h1>
           <Tabs defaultValue="3dassets" className="w-full">
-            <TabsList className="grid w-full grid-cols-6">
+            <TabsList className="grid w-full grid-cols-2  sm:grid-cols-6 h-full ">
               <TabsTrigger value="3dassets">3D ASSETS</TabsTrigger>
               <TabsTrigger value="cgiadv">CGI ADVERTISEMENTS</TabsTrigger>
               <TabsTrigger value="charactermodelling">
