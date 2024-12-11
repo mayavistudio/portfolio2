@@ -17,9 +17,9 @@ import lighter1 from "../assets/3D ASSETS/lighter1.png";
 import lighter2 from "../assets/3D ASSETS/lighter2.png";
 import lighter3 from "../assets/3D ASSETS/lighter3.png";
 
-import lightgun1 from "../assets/3D ASSETS/Lagun1.png";
-import lightgun2 from "../assets/3D ASSETS/Lagun2.png";
-import lightgun3 from "../assets/3D ASSETS/Lagun3.png";
+import lightgun1 from "../assets/3D ASSETS/lagun1.png";
+import lightgun2 from "../assets/3D ASSETS/lagun2.png";
+import lightgun3 from "../assets/3D ASSETS/lagun3.png";
 
 import pistol1 from "../assets/3D ASSETS/gun1.png";
 import pistol2 from "../assets/3D ASSETS/gun2.png";
