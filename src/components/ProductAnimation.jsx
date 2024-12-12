@@ -31,6 +31,13 @@ const ProductAnimation = () => {
           frameBorder="0"
         ></iframe>
         <iframe
+          src="https://www.youtube.com/embed/AL3G4kK1GG0?autoplay=1&loop=1&mute=1&controls=0&playlist=AL3G4kK1GG0"
+          className="w-full aspect-square"
+          allow="autoplay"
+          frameBorder="0"
+        ></iframe>
+
+        <iframe
           src="https://www.youtube.com/embed/MZjPp8gm5VE?autoplay=1&loop=1&mute=1&controls=0&playlist=MZjPp8gm5VE"
           className="w-full aspect-square"
           allow="autoplay"

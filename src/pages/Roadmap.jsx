@@ -55,7 +55,7 @@ export const Roadmap = () => (
     <Header />
     <div className="h-full w-full bg-black py-32  bg-grid-white/[0.2] relative flex ">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(transparent_75%,#a257e6)]" />{" "}
+      <div className="absolute pointer-events-none inset-0 flex  items-center justify-center bg-black [mask-image:radial-gradient(transparent_75%,#a257e6)]" />{" "}
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -66,7 +66,7 @@ export const Roadmap = () => (
           Animation Roadmap
         </motion.h1>
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-600"></div>
+          <div className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-600"></div>
           {roadmapSteps.map((step, index) => (
             <RoadmapStep
               key={index}
