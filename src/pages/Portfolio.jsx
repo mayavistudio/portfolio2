@@ -13,10 +13,11 @@ const Portfolio = () => {
   const character = characters[0].projects;
   return (
     <>
-      <div className=" h-full  bg-black py-32  bg-custom-bg  relative flex ">
+      <div className=" h-full  bg-black py-32  bg-grid-white/[0.2]   relative flex ">
         <Header />
         {/* Radial gradient for the container to give a faded look */}
-        <div className="w-full absolute pointer-events-none inset-0 flex items-center justify-center bg-black   [mask-image:radial-gradient(transparent_75%,#a257e6)]"></div>
+        <div className="w-full h-full absolute inset-0 flex items-center justify-center bg-black bg-gradient-to-r from-purple-950 via-transparent to-purple-950 opacity-40"></div>
+
         <div className=" relative min-h-screen text-white px-2 sm:px-8 w-full ">
           <h1 className="text-4xl font-bold mb-8 text-purple-600 text-center">
             Our Portfolios
