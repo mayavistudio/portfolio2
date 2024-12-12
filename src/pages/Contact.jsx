@@ -169,9 +169,10 @@ const ContactPage = () => {
         console.log("Form submitted successfully.");
         setFormData({ name: "", email: "", message: "" }); // Reset form
       } else {
-        const errorData = await response.json(); // Parse the JSON response
+        const errorData = response.error; // Parse the JSON response
+
         setError(
-          errorData.error || "Failed to send the email. Please try again later."
+          errorData || "Failed to send the email. Please try again later."
         ); // Display the error message from the response
         console.error("Failed to send email:", errorData.error);
       }
