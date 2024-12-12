@@ -35,120 +35,120 @@ const ContactPage = () => {
       subject: `Message from ${formData.email}`,
       text: "",
       html: `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Message from ${formData.name}</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1a202c; /* Black background */
-            color: #e2e8f0; /* Light text color */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: #2d3748; /* Dark gray background */
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 700px;
-            width: 100%;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .container:hover {
-            transform: translateY(-10px);
-        }
-
-        h1 {
-            color: #9f7aea; /* Purple-600 */
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #cbd5e0;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        .message-content {
-            background-color: #1a202c;
-            border-radius: 10px;
-            padding: 20px;
-            border: 1px solid #4a5568;
-            margin-bottom: 20px;
-        }
-
-        .message-content p {
-            font-size: 1.1rem;
-            color: #e2e8f0;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        .detail {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .detail span {
-            font-weight: bold;
-            color: #9f7aea; /* Purple-600 */
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #cbd5e0;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Message from ${formData.name}</h1>
-        
-        <div class="message-content">
-            <div class="detail">
-                <h2>Contact Details</h2>
-                <p><span>Name:</span> ${formData.name}</p>
-                <p><span>Email:</span> ${formData.email}</p>
-            </div>
-            
-            <div class="detail">
-                <h2>Message:</h2>
-                <p>${formData.message}</p>
-            </div>
-        </div>
-
-       
-    </div>
-</body>
-</html>
-`,
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Message from ${formData.name}</title>
+      <style>
+          body {
+              font-family: 'Arial', sans-serif;
+              background-color: #1a202c; /* Black background */
+              color: #e2e8f0; /* Light text color */
+              margin: 0;
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+          }
+  
+          .container {
+              background-color: #2d3748; /* Dark gray background */
+              border-radius: 15px;
+              padding: 30px;
+              max-width: 700px;
+              width: 100%;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+              transition: transform 0.3s ease-in-out;
+          }
+  
+          .container:hover {
+              transform: translateY(-10px);
+          }
+  
+          h1 {
+              color: #9f7aea; /* Purple-600 */
+              font-size: 2.5rem;
+              text-align: center;
+              margin-bottom: 20px;
+          }
+  
+          h2 {
+              color: #cbd5e0;
+              font-size: 1.3rem;
+              margin-bottom: 15px;
+          }
+  
+          .message-content {
+              background-color: #1a202c;
+              border-radius: 10px;
+              padding: 20px;
+              border: 1px solid #4a5568;
+              margin-bottom: 20px;
+          }
+  
+          .message-content p {
+              font-size: 1.1rem;
+              color: #e2e8f0;
+              line-height: 1.6;
+              margin: 0;
+          }
+  
+          .detail {
+              margin-bottom: 15px;
+              font-size: 1.1rem;
+          }
+  
+          .detail span {
+              font-weight: bold;
+              color: #9f7aea; /* Purple-600 */
+          }
+  
+          .footer {
+              text-align: center;
+              margin-top: 30px;
+              font-size: 0.9rem;
+              color: #cbd5e0;
+          }
+  
+          @media (max-width: 600px) {
+              .container {
+                  padding: 20px;
+              }
+  
+              h1 {
+                  font-size: 2rem;
+              }
+  
+              h2 {
+                  font-size: 1.1rem;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Message from ${formData.name}</h1>
+          
+          <div class="message-content">
+              <div class="detail">
+                  <h2>Contact Details</h2>
+                  <p><span>Name:</span> ${formData.name}</p>
+                  <p><span>Email:</span> ${formData.email}</p>
+              </div>
+              
+              <div class="detail">
+                  <h2>Message:</h2>
+                  <p>${formData.message}</p>
+              </div>
+          </div>
+  
+         
+      </div>
+  </body>
+  </html>
+  `,
     };
 
     try {
@@ -169,8 +169,11 @@ const ContactPage = () => {
         console.log("Form submitted successfully.");
         setFormData({ name: "", email: "", message: "" }); // Reset form
       } else {
-        setError("Failed to send the email. Please try again later.");
-        console.error("Failed to send email.");
+        const errorData = await response.json(); // Parse the JSON response
+        setError(
+          errorData.error || "Failed to send the email. Please try again later."
+        ); // Display the error message from the response
+        console.error("Failed to send email:", errorData.error);
       }
     } catch (error) {
       setError("An error occurred while sending the email. Please try again.");
