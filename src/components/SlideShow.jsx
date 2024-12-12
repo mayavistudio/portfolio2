@@ -49,11 +49,11 @@ const Slideshow = () => {
 
   const phoneSlides = [
     { id: 1, title: "3d Assets", type: "image", src: d3phone },
-    { id: 2, title: "Phone Banner 2", type: "video", src: cgiphone },
-    { id: 2, title: "Phone Banner 2", type: "video", src: paphone },
-    { id: 2, title: "Phone Banner 2", type: "image", src: pamphone },
-    { id: 2, title: "Phone Banner 2", type: "image", src: charphone },
-    { id: 2, title: "Phone Banner 2", type: "image", src: intphone },
+    { id: 2, title: "CGI Advertisements", type: "video", src: cgiphone },
+    { id: 2, title: "Product Animation", type: "video", src: paphone },
+    { id: 2, title: "Product Modelling", type: "image", src: pamphone },
+    { id: 2, title: "Character Modelling", type: "image", src: charphone },
+    { id: 2, title: "Interior & Exterior", type: "image", src: intphone },
   ];
 
   const slides = isPhone ? phoneSlides : desktopSlides;
@@ -123,8 +123,8 @@ const Slideshow = () => {
             />
           )}
 
-          <div className="absolute bottom-1/2 left-[5%] bg-black/10">
-            <h2 className="text-white text-6xl font-bold uppercase tracking-wider">
+          <div className="absolute sm:bottom-1/2 bottom-1/4  left-[3%]   sm:left-[5%] bg-black/10">
+            <h2 className="text-white text-3xl sm:text-6xl font-bold uppercase tracking-normal sm:tracking-wider">
               {slide.title}
             </h2>
             <div className="mt-2 h-1 w-full bg-white mx-auto"></div>
