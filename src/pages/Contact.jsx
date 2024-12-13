@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import axios from "axios";
 import { motion } from "framer-motion"; // Framer Motion
 import { Mail, MapPin, Phone } from "lucide-react"; // Lucide React Icons
 import { useState } from "react";
@@ -50,39 +51,35 @@ const ContactPage = () => {
     };
 
     try {
-      const response = await fetch(
+      const response = await axios.post(
         "https://maya-snowy-omega.vercel.app/send-email",
+        emailData,
         {
-          method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Accept: "application/json",
           },
-          body: JSON.stringify(emailData),
+          withCredentials: true,
         }
       );
 
-      // First check if the response is ok
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      // Then try to parse the response
-      const data = await response.json();
-
-      if (response.ok) {
+      // Axios automatically throws for non-2xx responses
+      // and automatically parses JSON responses
+      if (response.status === 200) {
         // Reset form on success
         setFormData({ name: "", email: "", message: "" });
-        // Optionally show success message
+        // Show success message
         alert("Message sent successfully!");
-      } else {
-        throw new Error(data.message || "Failed to send message");
       }
     } catch (error) {
       console.error("Error sending email:", error);
-      setError(
-        error.message || "Failed to send the email. Please try again later."
-      );
+
+      // Handle Axios error responses
+      const errorMessage =
+        error.response?.data?.message ||
+        error.message ||
+        "Failed to send the email. Please try again later.";
+
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
