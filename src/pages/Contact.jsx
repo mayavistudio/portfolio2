@@ -26,161 +26,64 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Set loading to true to show the loader
-    setLoading(true);
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      setError("Please fill in all fields");
+      return;
+    }
 
-    // Prepare the email data
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError("Please enter a valid email address");
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+
     const emailData = {
       to: "keshavgupta9812@gmail.com",
       subject: `Message from ${formData.email}`,
       text: "",
-      html: `<!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Contact Message from ${formData.name}</title>
-      <style>
-          body {
-              font-family: 'Arial', sans-serif;
-              background-color: #1a202c; /* Black background */
-              color: #e2e8f0; /* Light text color */
-              margin: 0;
-              padding: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-          }
-  
-          .container {
-              background-color: #2d3748; /* Dark gray background */
-              border-radius: 15px;
-              padding: 30px;
-              max-width: 700px;
-              width: 100%;
-              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-              transition: transform 0.3s ease-in-out;
-          }
-  
-          .container:hover {
-              transform: translateY(-10px);
-          }
-  
-          h1 {
-              color: #9f7aea; /* Purple-600 */
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 20px;
-          }
-  
-          h2 {
-              color: #cbd5e0;
-              font-size: 1.3rem;
-              margin-bottom: 15px;
-          }
-  
-          .message-content {
-              background-color: #1a202c;
-              border-radius: 10px;
-              padding: 20px;
-              border: 1px solid #4a5568;
-              margin-bottom: 20px;
-          }
-  
-          .message-content p {
-              font-size: 1.1rem;
-              color: #e2e8f0;
-              line-height: 1.6;
-              margin: 0;
-          }
-  
-          .detail {
-              margin-bottom: 15px;
-              font-size: 1.1rem;
-          }
-  
-          .detail span {
-              font-weight: bold;
-              color: #9f7aea; /* Purple-600 */
-          }
-  
-          .footer {
-              text-align: center;
-              margin-top: 30px;
-              font-size: 0.9rem;
-              color: #cbd5e0;
-          }
-  
-          @media (max-width: 600px) {
-              .container {
-                  padding: 20px;
-              }
-  
-              h1 {
-                  font-size: 2rem;
-              }
-  
-              h2 {
-                  font-size: 1.1rem;
-              }
-          }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <h1>Message from ${formData.name}</h1>
-          
-          <div class="message-content">
-              <div class="detail">
-                  <h2>Contact Details</h2>
-                  <p><span>Name:</span> ${formData.name}</p>
-                  <p><span>Email:</span> ${formData.email}</p>
-              </div>
-              
-              <div class="detail">
-                  <h2>Message:</h2>
-                  <p>${formData.message}</p>
-              </div>
-          </div>
-  
-         
-      </div>
-  </body>
-  </html>
-  `,
+      html: `<!DOCTYPE html>...`, // Your existing HTML template
     };
 
     try {
-      // Send a POST request to the API
       const response = await fetch(
         "https://maya-snowy-omega.vercel.app/send-email",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Accept: "application/json",
           },
           body: JSON.stringify(emailData),
         }
       );
 
-      if (response.status === 200) {
-        // If the response is successful, clear the form and show success
-        console.log("Form submitted successfully.");
-        setFormData({ name: "", email: "", message: "" }); // Reset form
-      } else {
-        const errorData = response.error; // Parse the JSON response
+      // First check if the response is ok
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-        setError(
-          errorData || "Failed to send the email. Please try again later."
-        ); // Display the error message from the response
-        console.error("Failed to send email:", errorData.error);
+      // Then try to parse the response
+      const data = await response.json();
+
+      if (response.ok) {
+        // Reset form on success
+        setFormData({ name: "", email: "", message: "" });
+        // Optionally show success message
+        alert("Message sent successfully!");
+      } else {
+        throw new Error(data.message || "Failed to send message");
       }
     } catch (error) {
-      setError("An error occurred while sending the email. Please try again.");
       console.error("Error sending email:", error);
+      setError(
+        error.message || "Failed to send the email. Please try again later."
+      );
     } finally {
-      // Reset the loading state
       setLoading(false);
     }
   };
