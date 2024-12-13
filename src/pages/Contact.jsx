@@ -164,7 +164,7 @@ const ContactPage = () => {
         }
       );
 
-      if (response.ok) {
+      if (response.status === 200) {
         // If the response is successful, clear the form and show success
         console.log("Form submitted successfully.");
         setFormData({ name: "", email: "", message: "" }); // Reset form
