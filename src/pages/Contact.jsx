@@ -4,6 +4,7 @@ import { motion } from "framer-motion"; // Framer Motion
 import { Mail, MapPin, Phone } from "lucide-react"; // Lucide React Icons
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa"; // WhatsApp Icon
+import logo from "../assets/Logo.png";
 import Footer from "../components/Footer";
 
 const ContactPage = () => {
@@ -143,7 +144,7 @@ const ContactPage = () => {
 
 <div class="email-container">
     <div class="header">
-        <img src="logo-url.png" alt="Mayavi Studios Logo">
+        <img src=${logo} alt="Mayavi Studios Logo">
         <h1>Mayavi Studios</h1>
     </div>
     <div class="content">
