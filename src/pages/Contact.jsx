@@ -47,7 +47,120 @@ const ContactPage = () => {
       to: "keshavgupta9812@gmail.com",
       subject: `Message from ${formData.email}`,
       text: "",
-      html: `<!DOCTYPE html>...`, // Your existing HTML template
+      html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayavi Studios</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .reply-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .reply-button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 15px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .reply-button {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="email-container">
+    <div class="header">
+        <img src="logo-url.png" alt="Mayavi Studios Logo">
+        <h1>Mayavi Studios</h1>
+    </div>
+    <div class="content">
+        <h1>New Message from ${formData.name}</h1>
+        <p><strong>Email:</strong> ${formData.email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${formData.message}</p>
+        <a href="mailto:${formData.email}" class="reply-button">Reply to ${formData.name}</a>
+    </div>
+    <div class="footer">
+        &copy; 2024 Mayavi Studios. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+`, // Your existing HTML template
     };
 
     try {
@@ -68,7 +181,6 @@ const ContactPage = () => {
         // Reset form on success
         setFormData({ name: "", email: "", message: "" });
         // Show success message
-        alert("Message sent successfully!");
       }
     } catch (error) {
       console.error("Error sending email:", error);
