@@ -45,7 +45,7 @@ const ContactPage = () => {
     setError(null);
 
     const emailData = {
-      to: "keshavgupta9812@gmail.com",
+      to: "contact@mayavistudio.in",
       subject: `Message from ${formData.email}`,
       text: "",
       html: `<!DOCTYPE html>
